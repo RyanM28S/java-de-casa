@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Lista de Tarefas</h1>
-    <p>Adicione suas tarefas!</p>
-    <input type="text" id="inputTarefa" placeholder="Digite uma tarefa">
-    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
-    <button onclick="limparLista()" class="botao_lista">Limpar Tudo</button>
-    <p id="mensagem"></p>
-    <ul id="listaTarefa"></ul>
-  </div>
-
-  <script src="javascript.js"></script>
+    <header>
+        <h1>Entre na sua conta</h1>
+        <hr>
+    </header>
+    <main>
+        <section id="Informações">
+            <label for="name"> <strong>Seu nome:</strong></label><br>
+            <input type="text" id="name" name="nome" placeholder="Digite seu nome"><br>
+            <label for="senha"><strong>Sua senha</strong></label><br>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha"><br>
+            <a href="sua-conta.html" target="_blank">Entrar</a>
+        </section>
+        <section class=" criar">
+            <p>Caso não tenha uma conta <a href="criar.html" target="_blank">Clique aqui</a></p>
+        </section>
+        <button onclick="IrParaConta()" id="Ir">Ir para conta</button>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>
