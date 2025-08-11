@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sua-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="fundo-preto">
+                <h1>Ola <span id="nomeExibido"></span>!</h1>
+                <img id="imagem" src="./icone-de-perfil-de-avatar_188544-4755.avif" alt="">
+                <input type="file" id="inputImagem" accept="image/*">
+            </div>
+            <section id="janela">
+                <div class="fundo-branco">
+                    <button onclick="abrirModal()" id="janelaAberta">
+                        <img id="botaoJanela" src="./58497.png" alt="">
+                    </button>
+                    <div id="meuModal" class="modal" style="display:none;">
+                        <div class="modal-conteudo">
+                            <h2>Conteúdo da janelinha!</h2>
+                            <p>Configuracoes</p>
+                            <p>notficacoes</p>
+                            <p>conteudo</p>
+                            <p>conteudo</p>
+                            <button onclick="fecharModal()" id="janelaFechar">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+
+    </header>
+    <main>
+        <div id="Infos">
+            <h2> Suas Informações</h2>
+            <p id="conta">Senha registrada: <br> <span id="senhaExibido"></span>!</p>
+            <p id="conta">Email registrado: <br> <span id="emailExibido"></span>!</p>
+            <p id="conta">Data registrado: <br><span id="dataExibido"></span>!</p>
+        </div>
+        <button onclick="voltar()" id="Voltar">
+            <img src="./download (1).png" alt="" id="inoconeVoltar"
+                style="width: 80px; height: 80px; vertical-align: middle;">
+        </button>
+        </div>
+
+    </main>
+    <script src="sua-script.js"></script>
+</body>
+
+</html>

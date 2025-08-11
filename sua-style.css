@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hearder-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    align-items: center;
+}
+
+.fundo-preto {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 7px;
+}
+.fundo-branco {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 7px;
+    text-align: center;
+
+}
+#botaoJanela {
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#Infos {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-left: 2%;
+    margin-right: 73%;
+    border-radius: 15px;
+    margin-top: 2%;
+    padding-bottom: 5%;
+}
+h2{
+    font-size: 40px;
+}
+#conta {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#Voltar {
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    margin-left: 30px ;
+}
+
+
+#imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-color: white;
+}
+input[type="file"] {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+.modal-conteudo {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.fechar {
+    top: 10px; right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#janelaAberta {
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    height: 110px;
+    width: 110px;
+    margin: 0;
+    text-align: end;
+
+}
+
+#janela {
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+    color: black;
+
+}
+#janelaFechar {
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    border: 2px solid white;
+    margin-top: auto;
+
+}
+#janelaFechar:hover {
+    background-color: white;
+    color: black;
+
+}

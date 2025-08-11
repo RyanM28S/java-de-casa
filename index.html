@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="cabeca">
+            <h1>Teste serio</h1>
+            <p>serio mesmo</p>
+        </div>
+    </header>
+    <main>
+
+        <h2>Infos</h2>
+        <section class="nome">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" placeholder="Nome" id="inputNome">
+            <button onclick="enviarNome()">Enviar</button>
+            <p id="confirmacao"></p>
+        </section>
+        <section class="nome">
+            <label for="senha"><strong>Senha:</strong></label>
+            <input type="password" placeholder="Senha" id="inputSenha">
+            <button onclick="enviarSenha()">Enviar</button>
+            <p id="confirmacoes"></p>
+        </section>
+        <section class="nome" >
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" placeholder="Email" id="inputEmail">
+            <button onclick="enviarEmail()">Enviar</button>
+            <p id="Confirmacao"></p>
+        </section>
+        <section class="nome">
+            <label for="Data"><strong>Data:</strong></label>
+            <input type="date" placeholder="Data" id="inputData">
+            <button onclick="enviarData()">Enviar</button>
+            <p id="confi"></p> 
+        </section>
+
+        <section class="nome">
+            <button  onclick="mostrarConta()">Mostrar Conta</button>
+    </main>
+    <footer>
+        
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
